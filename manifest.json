@@ -1,0 +1,35 @@
+{
+"manifest_version" : 2,
+"name" : "Anki-Flashcard-CSV",
+"version" : "0.001",
+"content_scripts": [
+{
+
+"matches" : [
+"https://translate.google.com/"
+],
+"js" : ["content.js"],
+"css" : ["styles.css", "toggle.css"],
+"html": ["child.html"]
+}
+],
+
+"background" : {
+
+    "scripts" : ["background.js"]
+
+},
+
+"web_accessible_resources": [
+    "ProductSans-Bold.woff",
+    "ProductSans-Regular.woff",
+    "child.html",
+    "google-translate.png",
+    "popupStyles.css"
+ ],
+
+ "permissions" : ["tabs"],
+
+"content_security_policy": "script-src 'self' 'sha256-IX1gm3eT3skqXDLXkETdwh9I3YT6reDPKAy/vSevxMc='; object-src 'self'"
+
+}

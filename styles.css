@@ -1,0 +1,179 @@
+    @font-face {
+        font-family: 'Product Sans Bold';
+        src: url('ProductSans-Bold.woff') format('woff');
+        }
+    
+
+        @font-face {
+            font-family: 'Product Sans Regular';
+            src: url('ProductSans-Regular.woff') format('woff');
+            }
+
+    
+
+
+
+
+:root{
+
+--ultramarine: #1967d2;
+--hover-dark-blue: #174EA6;
+--hover-blue: #E4ECFA;
+--active-blue: #CCDDF8;
+--button-border-grey: #DADCE0;
+
+--textarea-border-grey: #E0E0E0;
+--textarea-dark-background: #F5F5F5;
+
+
+
+}
+
+
+
+
+/* FORM */
+/* STYLE */
+/* POSITION / DISPLAY */
+/* ANIMATION */
+
+
+
+
+    
+
+
+button{
+
+/* FORM */
+height: 35px;
+width: 65px;
+border-radius: 4px;
+
+
+/* STYLE */
+font-family: 'Product Sans Bold'; 
+font-weight: 500;
+font-size: .875rem;
+
+background: rgba(255, 255, 255, 0);
+color: var(--ultramarine);
+border: 1px solid var(--button-border-grey);
+
+
+/* POSITION / DISPLAY */
+/* display: inline-block;
+display: absolute;
+left: 0px; */
+
+/* ANIMATION */
+transition: 0.3s;
+
+}
+
+
+
+
+
+button:hover{
+
+background: var(--hover-blue);
+color: var(--hover-dark-blue);
+/* ANIMATION */
+transition: 0.3s;
+
+}
+
+button:active{
+
+    background: var(--active-blue);
+   border: 1px solid var(--hover-dark-blue);
+    
+    transition: 0.3s;
+    
+    }
+
+
+
+
+#clear-the-list{
+
+        background: var(--ultramarine);
+        color: white;
+        /* margin-left: 500px; */
+        
+        }
+        
+
+
+#button-container{
+
+
+    position: fixed;
+    left: 300px;
+
+}
+
+
+
+#message-box{
+
+font-family: 'Product Sans Regular'; 
+font-size: 20px;
+
+width: 220px;
+height: 100px;
+padding: 20px;
+
+
+
+background: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+
+border: 1px solid var(--textarea-border-grey);
+border-radius: 4px; 
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+
+position: absolute;
+left: 45%;
+top: 20%;
+z-index: 1000;
+
+animation: bluePulse 1.5s;
+
+
+}
+
+
+#message{
+
+text-align: center;
+padding-right: 5px;
+
+}
+
+
+
+
+
+
+
+.key-word{
+
+color: var(--ultramarine);
+
+}
+
+
+
+
+
+
+@keyframes bluePulse {
+    0%   {background-color: var(--active-blue);}
+    100%  {background-color: rgb(255, 255, 255);}
+}
